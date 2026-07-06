@@ -1,218 +1,87 @@
-# PrepAI
+# AI Interview Preparation Assistant
 
-AI-Powered RAG-Based Interview Preparation Assistant.
+## 📌 Overview
 
-PrepAI is a full-stack Retrieval-Augmented Generation (RAG) chatbot designed for interview preparation using uploaded study materials.
+The AI Interview Preparation Assistant is a Generative AI application designed to help candidates prepare for technical and HR interviews. It generates personalized interview questions based on a candidate's resume and job description, evaluates responses using Large Language Models (LLMs), and provides detailed feedback with performance analysis.
 
----
-
-# Features
-
-- Upload PDF, DOCX, TXT, CSV files
-- Semantic search using FAISS
-- AI-powered contextual responses
-- Mock interview mode
-- AI answer evaluation
-- Modern ChatGPT-style UI
-- RAG architecture implementation
+The application simulates a real interview experience through adaptive questioning, helping users improve their technical knowledge, communication skills, and interview confidence.
 
 ---
 
-# Tech Stack
+## 🚀 Features
 
-## Frontend
-- React
-- Vite
-- TailwindCSS
-
-## Backend
-- Flask
-- Flask-CORS
-
-## AI / RAG
-- Groq API
-- Llama 3.1 8B Instant
-- sentence-transformers
-- FAISS
+- Resume-based interview question generation
+- Job description analysis for personalized interviews
+- Technical and HR interview simulation
+- AI-powered answer evaluation using LLMs
+- Adaptive follow-up questions
+- Instant feedback and scoring
+- Performance report with strengths and improvement areas
+- Interactive Streamlit interface
+- REST APIs built with FastAPI
 
 ---
 
-# Project Structure
+## 🛠️ Tech Stack
 
-```plaintext
-PrepAI/
-│
-├── backend/
-│   ├── app.py
-│   ├── requirements.txt
-│   ├── rag/
-│   ├── uploads/
-│   └── vectorstore/
-│
-├── frontend/
-│   ├── src/
-│   ├── package.json
-│   └── vite.config.js
-│
-├── README.md
-└── .gitignore
+- Python
+- FastAPI
+- LangChain
+- OpenAI / Gemini API
+- Streamlit
+- PyPDF2
+- python-docx
+- SQLite / MongoDB (Optional)
+
+---
+
+## ⚙️ Workflow
+
+1. Upload your resume.
+2. Upload or paste the job description.
+3. Extract skills, projects, and experience from the resume.
+4. Compare resume with job requirements.
+5. Generate personalized interview questions using an LLM.
+6. Evaluate candidate responses.
+7. Generate adaptive follow-up questions.
+8. Display detailed feedback and performance reports.
+
+---
+
+## 📂 Project Structure
+
+```
+AI-Interview-Preparation-Assistant/
+│── app.py
+│── main.py
+│── api.py
+│── resume_parser.py
+│── question_generator.py
+│── evaluator.py
+│── report_generator.py
+│── utils/
+│── uploads/
+│── requirements.txt
+│── README.md
 ```
 
 ---
 
-# Setup Instructions
+## 🎯 Future Enhancements
 
-# Backend Setup
-
-## 1. Open backend folder
-
-```bash
-cd backend
-```
-
----
-
-## 2. Create virtual environment
-
-```bash
-python3 -m venv venv
-```
+- Voice-based interviews using Speech-to-Text
+- AI-generated coding interview questions
+- Live code editor with automatic evaluation
+- Company-specific interview preparation
+- Interview history dashboard
+- Multi-language support
 
 ---
 
-## 3. Activate environment
+## 👩‍💻 Author
 
-### Mac/Linux
+**Arti Yadav**
 
-```bash
-source venv/bin/activate
-```
+B.Tech Computer Science & Engineering
 
-### Windows
-
-```bash
-venv\\Scripts\\activate
-```
-
----
-
-## 4. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 5. Create .env file
-
-Create:
-
-```plaintext
-backend/.env
-```
-
-Add:
-
-```env
-GROQ_API_KEY=your_groq_api_key
-```
-
-Get free API key from:
-
-https://console.groq.com
-
----
-
-## 6. Run backend
-
-```bash
-python app.py
-```
-
-Runs on:
-
-```plaintext
-http://127.0.0.1:5000
-```
-
----
-
-# Frontend Setup
-
-## 1. Open frontend
-
-```bash
-cd frontend
-```
-
----
-
-## 2. Install packages
-
-```bash
-npm install
-```
-
----
-
-## 3. Run frontend
-
-```bash
-npm run dev
-```
-
-Runs on:
-
-```plaintext
-http://localhost:5173
-```
-
----
-
-# How to Use
-
-1. Upload interview preparation documents
-2. Ask questions in chat
-3. View retrieved document chunks
-4. Use mock interview mode
-5. Get AI evaluations and feedback
-
----
-
-# Supported File Types
-
-- PDF
-- DOCX
-- TXT
-- CSV
-
----
-
-# RAG Workflow
-
-1. File Upload
-2. Text Extraction
-3. Chunking
-4. Embedding Generation
-5. FAISS Storage
-6. Semantic Retrieval
-7. AI Response Generation
-
----
-
-# Future Improvements
-
-- Authentication
-- Persistent database
-- Streaming responses
-- Voice interview mode
-- Deployment
-
----
-
-# Author
-
-Payal A Bhavesh
-# AI-Interview-Preparation-Assistant
-AI-powered RAG-based interview preparation assistant using uploaded study materials.
+Generative AI | LLMs | RAG | Python | FastAPI | LangChain | Machine Learning
